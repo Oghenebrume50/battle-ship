@@ -8,11 +8,6 @@
     "Watch": "webpack --watch",
     "build": "webpack"
   },
-  "jest": {
-    "plugins": [
-      "transform-es2015-modules-commonjs"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Oghenebrume50/battle-ship.git"
