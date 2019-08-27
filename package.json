@@ -9,7 +9,9 @@
     "build": "webpack"
   },
   "jest": {
-    "plugins": ["transform-es2015-modules-commonjs"]
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
   },
   "repository": {
     "type": "git",
