@@ -1,14 +1,11 @@
 const Ship = (length) => {
-  const spots = new Array(length);
-  const hit = () => true;
-  const isSunk = () => spots.every((spot) => spot === 'x');
-  //const positionShip = () => true;
-
+  const positions = Array.from({ length }, () => false);
+  const hit = (spot) => { positions[spot] };
+  const isSunk = () => positions.every((spot) => spot);
   return {
-    spots,
     hit: hit(),
     isSunk: isSunk(),
-    length: spots.length,
+    length: positions.length,
   };
 };
 
