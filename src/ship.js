@@ -1,12 +1,13 @@
-const Ship = (length) => {
-  const positions = Array.from({ length }, () => false);
-  const hit = (spot) => { positions[spot] };
-  const isSunk = () => positions.every((spot) => spot);
+const shipFactory = (length, isHorizontal) => {
+  const cells = new Array(length).fill(0);
+  const isSunk = () => cells.every((cell) => cell === 'X');
+  const hit = (cell) => {
+    cells[cell] = 'X';
+    return cells;
+  };
   return {
-    hit: hit(),
-    isSunk: isSunk(),
-    length: positions.length,
+    length, cells, isSunk, hit, isHorizontal,
   };
 };
 
-module.exports = Ship;
+export default shipFactory;
