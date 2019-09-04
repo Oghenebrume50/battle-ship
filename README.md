@@ -12,5 +12,7 @@ This is a battleship game project built by [Raphael Noriode](https://github.com/
 ### How to Play 
 Click on the Play button on page load and randomly click on boxes to select a ship position repeat this till a winner is found.
 
+## Play [here](https://oghenebrume50.github.io/battle-ship/dist/index.html)
+
 ## proper reference 
 [Battleship](https://en.wikipedia.org/wiki/Battleship_(game))
