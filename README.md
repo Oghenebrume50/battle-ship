@@ -7,7 +7,7 @@ This is a battleship game project built by [Raphael Noriode](https://github.com/
 - CSS
 - Javascript
 
-![Image]('../assets/img/11.png')
+![Image]('dist/assets/img/11.png')
 
 ### How to Play 
 Click on the Play button on page load and randomly click on boxes to select a ship position repeat this till a winner is found.
