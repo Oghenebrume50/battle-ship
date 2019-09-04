@@ -1,0 +1,31 @@
+{
+  "name": "battle-ship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oghenebrume50/battle-ship.git"
+  },
+  "author": "Raphael Noriode <raphlbrume@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oghenebrume50/battle-ship/issues"
+  },
+  "homepage": "https://github.com/Oghenebrume50/battle-ship#readme",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.2",
+    "jest": "^24.9.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
+}

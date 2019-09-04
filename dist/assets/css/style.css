@@ -1,0 +1,131 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+#main > div {
+  position: relative;
+  text-align: center;
+}
+
+#playerBoard,
+#computerBoard {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(10, 1fr);
+  box-sizing: border-box;
+  border: 1px solid black;
+  position: relative;
+}
+
+div.playerBoard,
+div.computerBoard {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.playerBoard.ship {
+  background-color: #cec6c6;
+}
+
+.playerBoard.ship.horizontal {
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
+}
+
+.playerBoard.ship.vertical {
+  border-right: 2px solid green;
+  border-left: 2px solid green;
+}
+
+.playerBoard.ship.first-cell.horizontal {
+  border-left: 2px solid green;
+}
+
+.playerBoard.ship.last-cell.horizontal {
+  border-right: 2px solid green;
+}
+
+.playerBoard.ship.first-cell.vertical {
+  border-top: 2px solid green;
+}
+
+.playerBoard.ship.last-cell.vertical {
+  border-bottom: 2px solid green;
+}
+
+.hit,
+.miss {
+  pointer-events: none;
+}
+
+.hit {
+  background-color: red;
+}
+
+.miss {
+  background-color: lightblue;
+}
+
+.playerBoard.hit {
+  background-color: brown;
+}
+
+#message {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#restart {
+  padding: 20px;
+}
+
+#randomize,
+#play {
+  padding: 20px;
+  font-size: 20px;
+}
+
+#play {
+  position: absolute;
+  width: 200px;
+  top: 40%;
+  left: calc(50% - 100px);
+}
+
+.inactive {
+  pointer-events: none;
+  background-color: #eeeeee;
+  opacity: 0.2;
+}
+
+.hide {
+  display: none;
+}
+
+.inactive {
+  pointer-events: none;
+  background-color: #eeeeee;
+  opacity: 0.2;
+}
+
+.hide {
+  display: none;
+}
