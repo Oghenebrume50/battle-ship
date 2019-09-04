@@ -1,4 +1,3 @@
-/* eslint-disable */
 import shipFactory from './ship';
 import playerFactory from './player';
 import gameboardFactory from './gameboard';
